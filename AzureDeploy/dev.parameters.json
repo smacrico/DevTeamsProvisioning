@@ -1,0 +1,37 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "appName": {
+        "value": "TeamIntegrationDev"
+      },
+       "repoUrl": {
+       "value": "https://github.com/smacrico/TemsProvisioning.git"
+      },
+      "branch": {
+        "value": "(your github branch like master"
+      },
+      "storageNamePrefix": {
+        "value": "teams"
+      },
+      "TENANT": {
+        "value": "eaf93b58-8876-4dc7-9c70-78917324421a"
+      },
+      "TENANT_NAME": {
+        "value": "(your tenant name without .onmicrosoft.com)"
+      },
+      "CLIENT_ID": {
+        "value": "16599db4-a4f5-4dbb-8513-f6c361c71811"
+      },
+      "CLIENT_SECRET": {
+        "value": "@Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))"
+      },
+      "TEMPLATE_SITE_URL": {
+        "value": "https://penval.sharepoint.com/sites/wingtip-toys-inc"
+      },
+      "TEMPLATE_LIB_NAME": {
+        "value": "Team Template Files"
+      }
+    }
+  }
+  
