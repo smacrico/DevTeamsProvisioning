@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "appName": {
-        "value": "TeamIntegrationDev"
+        "value": "TeamIntegrationDevPV"
       },
        "repoUrl": {
        "value": "https://github.com/smacrico/DevTeamsProvisioning.git"
