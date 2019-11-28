@@ -1,6 +1,6 @@
 # Provision storage and function app
 .\Deploy-AzureResourceGroup.ps1 `
-    -ResourceGroupLocation EastUS `
+    -ResourceGroupLocation westeurope `
     -ResourceGroupName pvresgroup `
     -TemplateParametersFile prod.parameters.json
 
