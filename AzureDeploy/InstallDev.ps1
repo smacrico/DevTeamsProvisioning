@@ -7,7 +7,7 @@
 # Ensure storage queues are in place
 $storageAccount = Get-AzureRmStorageAccount | Where-Object ResourceGroupName -eq "venusdevstoragegroup"
 $storageContext = $storageAccount.Context
-New-AzureStorageQueue -Name "create-team-request-queue" -Context $storageContext -ErrorAction Ignore
-New-AzureStorageQueue -Name "create-team-completion-queue" -Context $storageContext -ErrorAction Ignore
-New-AzureStorageQueue -Name "clone-team-request-queue" -Context $storageContext -ErrorAction Ignore
-New-AzureStorageQueue -Name "clone-team-completion-queue" -Context $storageContext -ErrorAction Ignore
+New-AzureStorageQueue -Name "create-team-request-myqueue" -Context $storageContext -ErrorAction Ignore
+New-AzureStorageQueue -Name "create-team-completion-myqueue" -Context $storageContext -ErrorAction Ignore
+New-AzureStorageQueue -Name "clone-team-request-myqueue" -Context $storageContext -ErrorAction Ignore
+New-AzureStorageQueue -Name "clone-team-completion-myqueue" -Context $storageContext -ErrorAction Ignore
