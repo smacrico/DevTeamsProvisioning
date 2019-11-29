@@ -1,0 +1,175 @@
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy> az account set -s "AZVenus"
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy> .\InstallDev.ps1
+VERBOSE: Performing the operation "Replacing resource group ..." on target "".
+VERBOSE: 3:42:04 PM - Created resource group 'pvresgroup' in location 'westeurope'
+
+
+ResourceGroupName : pvresgroup
+Location          : westeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/f294acaf-5266-423c-99b1-a5d71b77f6ef/resourceGroups/pvresgroup
+
+
+cmdlet New-AzureRmResourceGroupDeployment at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+appName: TeamIntegrationDevPV
+repoUrl: https://github.com/smacrico/DevTeamsProvisioning.git
+TENANT: eaf93b58-8876-4dc7-9c70-78917324421a
+TENANT_NAME: Venus
+CLIENT_ID: 16599db4-a4f5-4dbb-8513-f6c361c71811
+CLIENT_SECRET: @Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))
+TEMPLATE_SITE_URL: https://penval.sharepoint.com/sites/wingtip-toys-inc
+TEMPLATE_LIB_NAME: Team Template Files
+
+DeploymentName          : azuredeploy-1128-1342
+CorrelationId           : a65adaae-d863-444e-b8bd-2b42ba11cf65
+ResourceGroupName       : pvresgroup
+ProvisioningState       : Succeeded
+Timestamp               : 11/28/2019 1:51:05 PM
+Mode                    : Incremental
+TemplateLink            :
+TemplateLinkString      :
+DeploymentDebugLogLevel :
+Parameters              : {[appName, Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageAccountType,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageNamePrefix,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable], [location,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable]...}
+ParametersString        :
+                          Name             Type                       Value
+                          ===============  =========================  ==========
+                          appName          String                     TeamIntegrationDevPV
+                          storageAccountType  String                     Standard_LRS
+                          storageNamePrefix  String                     oprov
+                          location         String                     westeurope
+                          runtime          String                     node
+                          repoUrl          String
+                          https://github.com/smacrico/DevTeamsProvisioning.git
+                          branch           String                     master
+                          tenant           String                     eaf93b58-8876-4dc7-9c70-78917324421a
+                          tenanT_NAME      String                     Venus
+                          clienT_ID        String                     16599db4-a4f5-4dbb-8513-f6c361c71811
+                          clienT_SECRET    String
+                          @Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))
+                          templatE_SITE_URL  String
+                          https://penval.sharepoint.com/sites/wingtip-toys-inc
+                          templatE_LIB_NAME  String                     Team Template Files
+
+Outputs                 :
+OutputsString           :
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovq6yo3e6tcg3h6.queue.core.windows.net/create-team-request-devqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : create-team-request-devqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovq6yo3e6tcg3h6.queue.core.windows.net/create-team-completion-devqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : create-team-completion-devqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovq6yo3e6tcg3h6.queue.core.windows.net/clone-team-request-devqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : clone-team-request-devqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovq6yo3e6tcg3h6.queue.core.windows.net/clone-team-completion-devqueue
+ApproximateMessageCoun
+t :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : clone-team-completion-devqueue
+
+
+
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy>
+
+*******************************************************
+*******************************************************
+*******************************************************
+**************************************************************************************************************
+*******************************************************
+
+
+
+
+
+
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy> .\Deploy-AzureResourceGroup.ps1
+
+cmdlet Deploy-AzureResourceGroup.ps1 at command pipeline position 1
+Supply values for the following parameters:
+ResourceGroupLocation: westeurope
+VERBOSE: Performing the operation "Replacing resource group ..." on target "".
+VERBOSE: 1:52:43 PM - Created resource group 'venusdevstoragegroup' in location 'westeurope'
+
+
+ResourceGroupName : venusdevstoragegroup
+Location          : westeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/f294acaf-5266-423c-99b1-a5d71b77f6ef/resourceGroups/venusdevstoragegroup
+
+
+cmdlet New-AzureRmResourceGroupDeployment at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+appName: TeamsIntegrationDev
+repoUrl: https://github.com/smacrico/DevTeamsProvisioning
+TENANT: eaf93b58-8876-4dc7-9c70-78917324421a
+TENANT_NAME: Venus
+CLIENT_ID: 16599db4-a4f5-4dbb-8513-f6c361c71811
+CLIENT_SECRET: @Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))
+TEMPLATE_SITE_URL: https://penval.sharepoint.com/sites/wingtip-toys-inc
+TEMPLATE_LIB_NAME: Team Template Files
+
+DeploymentName          : azuredeploy-1128-1152
+CorrelationId           : a6358134-5438-44ca-9326-f53a91481b1a
+ResourceGroupName       : venusdevstoragegroup
+ProvisioningState       : Succeeded
+Timestamp               : 11/28/2019 12:07:27 PM
+Mode                    : Incremental
+TemplateLink            :
+TemplateLinkString      :
+DeploymentDebugLogLevel :
+Parameters              : {[appName, Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageAccountType,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageNamePrefix,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable], [location,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable]...}
+ParametersString        :
+                          Name             Type                       Value
+                          ===============  =========================  ==========
+                          appName          String                     TeamsIntegrationDev
+                          storageAccountType  String                     Standard_LRS
+                          storageNamePrefix  String                     oprov
+                          location         String                     westeurope
+                          runtime          String                     node
+                          repoUrl          String                     https://github.com/smacrico/DevTeamsProvisioning
+                          branch           String                     master
+                          tenant           String                     eaf93b58-8876-4dc7-9c70-78917324421a
+                          tenanT_NAME      String                     Venus
+                          clienT_ID        String                     16599db4-a4f5-4dbb-8513-f6c361c71811
+                          clienT_SECRET    String
+                          @Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))
+                          templatE_SITE_URL  String
+                          https://penval.sharepoint.com/sites/wingtip-toys-inc
+                          templatE_LIB_NAME  String                     Team Template Files
+
+Outputs                 :
+OutputsString           :

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AzureDeploy",
+    "\\CreateTeam",
+    "\\Services",
+    "\\Services\\Settings",
+    "\\Services\\Team",
+    "\\Services\\Template"
+  ],
+  "SelectedNode": "\\Services\\Settings\\settings.js",
+  "PreviewInSolutionExplorer": false
+}
