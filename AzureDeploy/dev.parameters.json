@@ -21,10 +21,10 @@
         "value": "Venus"
       },
       "CLIENT_ID": {
-        "value": "16599db4-a4f5-4dbb-8513-f6c361c71811"
+        "value": "4f97f07d-4e35-4ff0-96ed-7deac2d6a1bd"
       },
       "CLIENT_SECRET": {
-        "value": "@Microsoft.KeyVault(SecretUri=(IR03-BQgQW/ACrNizhOM:i0X9p@m0=K@))"
+        "value": "@Microsoft.KeyVault(SecretUri=(https://pvteam.vault.azure.net/secrets/PVTeam/38c8a9594d8a4e64a491639bea0f86af))"
       },
       "TEMPLATE_SITE_URL": {
         "value": "https://penval.sharepoint.com/sites/wingtip-toys-inc"
