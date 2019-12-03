@@ -1,0 +1,97 @@
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy> .\InstallDev.ps1
+VERBOSE: Performing the operation "Replacing resource group ..." on target "".
+VERBOSE: 1:55:46 PM - Created resource group 'pvteamsresourcegroup' in location 'westeurope'
+
+
+ResourceGroupName : pvteamsresourcegroup
+Location          : westeurope
+ProvisioningState : Succeeded
+Tags              :
+ResourceId        : /subscriptions/f294acaf-5266-423c-99b1-a5d71b77f6ef/resourceGroups/pvteamsresourcegroup
+
+
+cmdlet New-AzureRmResourceGroupDeployment at command pipeline position 1
+Supply values for the following parameters:
+(Type !? for Help.)
+appName: PVTeamIntegration
+repoUrl: https://github.com/smacrico/DevTeamsProvisioning.git
+TENANT: eaf93b58-8876-4dc7-9c70-78917324421a
+TENANT_NAME: Venus
+CLIENT_ID: 4f97f07d-4e35-4ff0-96ed-7deac2d6a1bd
+CLIENT_SECRET: @Microsoft.KeyVault(SecretUri=(https://pvteam.vault.azure.net/secrets/PVTeam/38c8a9594d8a4e64a491639bea0f86af))
+TEMPLATE_SITE_URL: https://penval.sharepoint.com/sites/wingtip-toys-inc
+TEMPLATE_LIB_NAME: Teaam Template Files
+
+DeploymentName          : azuredeploy-1129-1155
+CorrelationId           : 795320c8-2527-4f05-b14e-04f1b151d1f5
+ResourceGroupName       : pvteamsresourcegroup
+ProvisioningState       : Succeeded
+Timestamp               : 11/29/2019 12:05:24 PM
+Mode                    : Incremental
+TemplateLink            :
+TemplateLinkString      :
+DeploymentDebugLogLevel :
+Parameters              : {[appName, Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageAccountType,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable],
+                          [storageNamePrefix,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable], [location,
+                          Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkModels.DeploymentVariable]...}
+ParametersString        :
+                          Name             Type                       Value
+                          ===============  =========================  ==========
+                          appName          String                     PVTeamIntegration
+                          storageAccountType  String                     Standard_LRS
+                          storageNamePrefix  String                     oprov
+                          location         String                     westeurope
+                          runtime          String                     node
+                          repoUrl          String
+                          https://github.com/smacrico/DevTeamsProvisioning.git
+                          branch           String                     master
+                          tenant           String                     eaf93b58-8876-4dc7-9c70-78917324421a
+                          tenanT_NAME      String                     Venus
+                          clienT_ID        String                     4f97f07d-4e35-4ff0-96ed-7deac2d6a1bd
+                          clienT_SECRET    String                     @Microsoft.KeyVault(SecretUri=(https://pvteam.vau
+                          lt.azure.net/secrets/PVTeam/38c8a9594d8a4e64a491639bea0f86af))
+                          templatE_SITE_URL  String
+                          https://penval.sharepoint.com/sites/wingtip-toys-inc
+                          templatE_LIB_NAME  String                     Teaam Template Files
+
+Outputs                 :
+OutputsString           :
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovmd2gzkxy6fajo.queue.core.windows.net/create-team-request-pvqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : create-team-request-pvqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovmd2gzkxy6fajo.queue.core.windows.net/create-team-completion-pvqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : create-team-completion-pvqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovmd2gzkxy6fajo.queue.core.windows.net/clone-team-request-pvqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : clone-team-request-pvqueue
+
+
+CloudQueue              : Microsoft.WindowsAzure.Storage.Queue.CloudQueue
+Uri                     : https://oprovmd2gzkxy6fajo.queue.core.windows.net/clone-team-completion-pvqueue
+ApproximateMessageCount :
+EncodeMessage           : True
+Context                 : Microsoft.WindowsAzure.Commands.Storage.AzureStorageContext
+Name                    : clone-team-completion-pvqueue
+
+
+
+PS C:\PVDev\CRMDev\DevTeamsProvisioning\AzureDeploy>
