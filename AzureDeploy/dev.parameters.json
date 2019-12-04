@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "appName": {
-        "value": "ATHDevTeamIntegration"
+        "value": "PVTeamIntegration"
       },
        "repoUrl": {
        "value": "https://github.com/smacrico/DevTeamsProvisioning.git"
