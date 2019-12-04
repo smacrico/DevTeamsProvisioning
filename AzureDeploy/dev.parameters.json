@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "appName": {
-        "value": "ATHTeamIntegration"
+        "value": "ATHDevTeamIntegration"
       },
        "repoUrl": {
        "value": "https://github.com/smacrico/DevTeamsProvisioning.git"
@@ -15,7 +15,7 @@
         "value": "teams"
       },
       "TENANT": {
-        "value": "eaf93b58-8876-4dc7-9c70-78917324421a"
+        "value": "f294acaf-5266-423c-99b1-a5d71b77f6ef"
       },
       "TENANT_NAME": {
         "value": "Venus"
