@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "appName": {
-        "value": "PVTeamIntegration"
+        "value": "LMHTeams"
       },
        "repoUrl": {
        "value": "https://github.com/smacrico/DevTeamsProvisioning.git"
@@ -12,7 +12,7 @@
         "value": "master"
       },
       "storageNamePrefix": {
-        "value": "teams"
+        "value": "lmh"
       },
       "TENANT": {
         "value": "f294acaf-5266-423c-99b1-a5d71b77f6ef"
@@ -21,10 +21,10 @@
         "value": "Venus"
       },
       "CLIENT_ID": {
-        "value": "4f97f07d-4e35-4ff0-96ed-7deac2d6a1bd"
+        "value": "896bca0c-eabb-42d6-81d6-c089ba50a3d6"
       },
       "CLIENT_SECRET": {
-        "value": "@Microsoft.KeyVault(SecretUri=(https://pvteam.vault.azure.net/secrets/PVTeam/38c8a9594d8a4e64a491639bea0f86af))"
+        "value": "@Microsoft.KeyVault(SecretUri=(https://lmhkayvault.vault.azure.net/secrets/LMHVault/e9ed64bdd70841ecbaba13067ff479c9))"
       },
       "TEMPLATE_SITE_URL": {
         "value": "https://penval.sharepoint.com/sites/wingtip-toys-inc"
